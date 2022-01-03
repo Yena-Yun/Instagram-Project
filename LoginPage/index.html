@@ -15,18 +15,13 @@
 	<section class="login-page">
 		<main class="login-main">
 			<div class="left-side">
-				<!-- background-image: 휴대폰이미지 -->
-				<div class="banner-image-container">
-					<div class="banner-image-list">
-						<img src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg"
-							alt="banner-image" class="banner-image">
-						<img src="https://www.instagram.com/static/images/homepage/screenshot2.jpg/6f03eb85463c.jpg"
-							alt="banner-image" class="banner-image">
-						<img src="https://www.instagram.com/static/images/homepage/screenshot3.jpg/f0c687aa6ec2.jpg"
-							alt="banner-image" class="banner-image">
-						<img src="https://www.instagram.com/static/images/homepage/screenshot4.jpg/842fe5699220.jpg"
-							alt="banner-image" class="banner-image">
-					</div>
+				<div class="banner-image-outter">
+					<img src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png"
+						alt="banner-image-outter" />
+				</div>
+				<div class="banner-image-inner">
+					<img src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg"
+						alt="banner-image-inner" />
 				</div>
 			</div>
 			<div class="right-side">
@@ -34,24 +29,23 @@
 					<h1 class="logo coreSpriteLoggedOutWordmark ">Instagram</h1>
 					<form action="">
 						<div class="login-form">
-							<div class="username">
-								<input type="text" placeholder="전화번호, 사용자 
-									이름 또는 이메일" />
+							<div class="username input">
+								<input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
 							</div>
-							<div class="password">
+							<div class="password input">
 								<input type="password" placeholder="비밀번호" />
-								<div class="show-password">비밀번호 표시</div>
 							</div>
+							<button type="submit" class="submit-btn">로그인</button>
 						</div>
 						<div class="separate-line">
 							<div class="line"></div>
-							<p>또는</p>
+							<span>또는</span>
 							<div class="line"></div>
 						</div>
-						<div class="social-login">
-							<div class="social-login-image"></div>
+						<button class="social-login">
+							<div class="facebook"></div>
 							<span>Facebook으로 로그인</span>
-						</div>
+						</button>
 						<div class="forgot-password">비밀번호를 잊으셨나요?</div>
 					</form>
 				</div>
@@ -73,7 +67,7 @@
 				</div>
 			</div>
 		</main>
-		<footer>
+		<footer class="footer">
 			<div class="footer-top">
 				<ul class="footer-top-list">
 					<li>Meta</li>

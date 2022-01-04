@@ -3,8 +3,12 @@
 	box-sizing: border-box;
 }
 
+html,
 body {
-	font-family: 'Malgun Gothic';
+	width: 100%;
+	height: 100%;
+	font-family: 'Malgun Gothic Boot',
+	sans-serif;
 }
 
 button {
@@ -46,39 +50,44 @@ ul {
 	list-style: none;
 }
 
+p, span {
+	letter-spacing: -0.04em;
+}
+
 .login-page {
-	height: auto;
+	height: 100%;
 	background: #fafafa;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
 }
 
 .login-main {
 	width: 100%;
-	height: auto;
 	display: flex;
 	justify-content: center;
-	margin-top: 32px;
+	margin: 28px 0 0 -10px;
 }
 
 .left-side {
-	width: 400px;
-	height: 100vh;
+	width: 410px;
 	display: flex;
 	justify-content: right;
 }
 
 .banner-image-outter {
-	width: 410px;
+	width: 420px;
 	position: relative;
 	left: -5px;
 }
 
 .banner-image-inner {
-	max-width: 211px;
+	max-width: 217px;
 	position: absolute;
-	top: 87px;
-	left: 133px;
+	top: 89px;
+	left: 136px;
 }
 
 .banner-image-inner img {
@@ -97,16 +106,27 @@ ul {
 	background: #fff;
 	border: 1px solid #dbdbdb;
 	border-radius: 2px;
-	margin-bottom: 10px;
+	margin-bottom: 9px;
 	padding: 32px 36px 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-h1.logo {
-	text-align: center;
-	margin-bottom: 12px;
+.logo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	background: url("img/instagram_sprite.png") 0 -130px;
+	width: 175px;
+	height: 51px;
+}
+
+.logo span {
+	display: none;
 }
 
 .login-form {
@@ -145,10 +165,12 @@ h1.logo {
 	background: #dbdbdb;
 }
 
-.separate-line span {
+.separate-line p {
+	width: 30px;
 	color: #8e8e8e;
 	margin: 0 18px;
 	font-size: 12px;
+	font-weight: 500;
 }
 
 .social-login {
@@ -156,16 +178,15 @@ h1.logo {
 }
 
 .social-login .facebook {
-	background: url("img/instagram_sprite_image.png") no-repeat;
+	background: url("img/instagram_sprite.png") -414px -259px;
 	width: 16px;
 	height: 16px;
-	background-position: -414px -259px;
 	margin-right: 8px;
 }
 
-.social-login span {
+.social-login p {
 	color: #385185;
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: 600;
 }
 
@@ -182,7 +203,7 @@ h1.logo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 63px;
+	height: 60px;
 	padding: 10px 0;
 	margin-bottom: 10px;
 	background: #fff;
@@ -197,7 +218,7 @@ h1.logo {
 .no-account a {
 	font-size: 13px;
 	color: #0095f6;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .download {
@@ -207,9 +228,8 @@ h1.logo {
 }
 
 .download p {
-	font-size: 13px;
-	margin: 10px 0 20px;
-
+	font-size: 12px;
+	margin: 8px 0 18px;
 }
 
 .download-btns {
@@ -238,6 +258,7 @@ h1.logo {
 	flex-direction: column;
 	justify-content: center;
 	height: 105px;
+	margin-top: 24px;
 	margin-bottom: 52px;
 }
 
@@ -253,6 +274,11 @@ h1.logo {
 	height: 23px;
 }
 
+.top-list-line {
+	display: flex;
+	justify-content: center;
+}
+
 .footer-top-list li {
 	margin-right: 1rem;
 	font-size: 12px;
@@ -262,9 +288,8 @@ h1.logo {
 .footer-bottom {
 	display: flex;
 	justify-content: center;
-		margin-right: 20px;
-		font-size: 12px;
-		color: #8e8e8e;
+	font-size: 12px;
+	color: #8e8e8e;
 }
 
 .select-language {
@@ -277,4 +302,180 @@ h1.logo {
 	transform: rotate(180deg);
 }
 
+@media screen and (max-width: 875px) {
+	.left-side {
+		display: none;
+	}
 
+	.right-side {
+		margin-right: -30px;
+	}
+
+	.footer-top-list li {
+		font-size: 11px;
+		margin-right: 14px;
+	}
+
+	.footer-bottom {
+		font-size: 11px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	/* .login-page {
+		height: auto;
+	} */
+
+	.login-main {
+		align-items: center;
+	}
+
+	.footer {
+		width: 100%;
+		height: 300px;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.login-main {
+		height: 835px;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 375px) {
+	.login-page {
+		/* height: 100vh; */
+		background: #fafafa;
+		display: flex;
+		flex-direction: column;
+		justify-content: initial;
+	}
+
+	.login-main {
+		margin: 0;
+	}
+
+	.login-form-container {
+		width: 320px;
+		background: transparent;
+		border: none;
+		border-radius: initial;
+		margin-bottom: 9px;
+		padding: 0 30px 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.logo {
+		margin: 5px 0 7px;
+	}
+
+	.footer {
+		height: 100px;
+		margin: 100px 0 0;
+	}
+
+	.footer-top-list {
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		margin-bottom: 55px;
+	}
+
+	.footer-top-list li {
+		margin: 0 8px 12px;
+		font-size: 13px;
+	}
+
+	.footer-bottom {
+		margin-top: -40px;
+	}
+}
+
+@media screen and (min-width: 320px) {
+	.login-page {
+		/* height: 100vh; */
+		justify-content: initial;
+	}
+
+	.logo {
+		margin: 4px 0 12px;
+	}
+	
+	.right-side {
+		padding: 0;
+		margin: 0;
+	}
+
+	.login-form {
+		padding: 0 16px;
+	}
+
+	.login-form-container {
+		width: 100%;
+		background: transparent;
+		border: none;
+		border-radius: initial;
+		margin-bottom: 9px;
+		padding: 0 20px 20px 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.separate-line p {
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	.social-login {
+		margin: 24px 0 16px;
+	}
+	
+	.social-login p {
+		font-size: 14px;
+	}
+
+	.forgot-password {
+		font-size: 12px;
+	}
+
+	.no-account {
+		background: transparent;
+		border: none;
+		border-radius: initial;
+	}
+
+	.no-account p,
+	.no-account a,
+	.download p {
+		font-size: 15px;
+	}
+
+	.download-btns {
+		margin-right: -10px;
+	}
+
+	.download-btn-image {
+		width: 136px;
+		height: 40px;
+	}
+
+	.footer {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 411px) {
+	.login-page {
+		padding-top: 40px;
+	}
+
+	.footer {
+		display: block;
+	}
+}

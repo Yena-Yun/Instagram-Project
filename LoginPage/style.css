@@ -78,6 +78,9 @@ p, span {
 }
 
 .banner-image-outter {
+	background: url('https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png');
+	background-size: 410px auto;
+	background-repeat: no-repeat;
 	width: 420px;
 	position: relative;
 	left: -5px;
@@ -85,14 +88,27 @@ p, span {
 
 .banner-image-inner {
 	max-width: 217px;
-	position: absolute;
-	top: 89px;
+	position: relative;
+	top: 90px;
 	left: 136px;
 }
 
 .banner-image-inner img {
-	display: flex;
-	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* opacity: 0; */
+}
+
+.previous {
+	z-index: 2;
+	opacity: 0;
+	transition: opacity 1500s ease-out;
+}
+
+.next {
+	opacity: 1;
+	transition: opacity 1500s ease-in;
 }
 
 .right-side {

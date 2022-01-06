@@ -97,17 +97,16 @@ p, span {
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* opacity: 0; */
+	opacity: 0;
 }
 
-.previous {
-	z-index: 2;
-	opacity: 0;
-	transition: opacity 1500s ease-out;
+.visible {
+	opacity: 1;
+	visibility: visible;
 }
 
 .next {
-	opacity: 1;
+	z-index: 2;
 	transition: opacity 1500s ease-in;
 }
 
@@ -158,6 +157,21 @@ h1 {
 	border-radius: 2px;
 	margin-bottom: 6px;
 	font-size: 10px;
+}
+
+.login-form .password {
+	display: flex;
+}
+
+.login-form .password input {
+	flex-grow: 1;
+}
+
+.login-form .password button {
+	width: 160px;
+	font-size: 12px;
+	font-weight: 600;
+	background: #fafafa;
 }
 
 .login-form .submit-btn {

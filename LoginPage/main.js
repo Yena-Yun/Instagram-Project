@@ -1,36 +1,40 @@
-const bannerImagesAll = document.querySelectorAll('.banner-image-inner img');
+//const imageArray = [];
+//
+//const image1 = document.querySelector('.shot1').outerHTML;
+//const image2 = document.querySelector('.shot2').outerHTML;
+//const image3 = document.querySelector('.shot3').outerHTML;
+//const image4 = document.querySelector('.shot4').outerHTML;
+//const image5 = document.querySelector('.shot5').outerHTML;
+//
+//console.log(image1.outerHTML);
+//
+//imageArray.push(image1, image2, image3, image4, image5);
 
-console.log(bannerImagesAll);
+const imageArray = document.querySelectorAll('.banner-image');
 
-const image1 = document.querySelector('.screenshot1');
-const image2 = document.querySelector('.screenshot2');
-const image3 = document.querySelector('.screenshot3');
-const image4 = document.querySelector('.screenshot4');
-const image5 = document.querySelector('.screenshot5');
+console.log(imageArray);
 
-// const bannerImage = document.querySelector('.banner-image');
-
-// const imageArray = ['img/shot1.jpg', 'img/shot2.jpg', 'img/shot3.jpg', 'img/shot4.jpg', 'img/shot5.jpg'];
-
-// let imageIndex = 1;
-
-const PREVIOUS = 'previous';
+const VISIBLE = 'visible';
 const NEXT = 'next';
 
-for (let i = 0; i <= bannerImagesAll.length; i++) {
-  console.log(bannerImagesAll[i]);
-  setInterval(() => {
-    // imageIndex++; // 2
-    i = i + 1;
-    // bannerImage.setAttribute('src', imageArray[imageIndex]);
+let index = 0;
 
-    // 전체 이미지 배열을 돈다.
-    // 2초마다 다음 이미지에 클래스 부여
-    // bannerImagesAll[i].classList.toggle(PREVIOUS);
-    // bannerImagesAll[i + 1].classList.toggle(NEXT);
-    // let eachImage = document.querySelector(`.image${i}`);
-    // if (i >= bannerImagesAll.length) i = 0;
-  }, 2000);
-}
+setInterval(() => {
+  if (index === imageArray.length - 1) index = 0;
 
-// changeImage();
+  let showImage = imageArray[index].classList.add(VISIBLE);
+  let nextImage = imageArray[index + 1].classList.add(NEXT);
+
+  console.log(showImage);
+  console.log(nextImage);
+
+  index++;
+
+  if (imageArray[index].classList.contains(VISIBLE)) {
+    imageArray[index].classList.remove(VISIBLE);
+  }
+
+  console.log(index);
+}, 1000);
+
+console.log(imageArray);

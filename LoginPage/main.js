@@ -95,9 +95,13 @@ function login(e) {
   if (userInputVal.value === 'ggg' && pwdInputVal.value === '123') {
     loginBtn.style.backgroundColor = '#0095f6';
     loginBtn.style.color = '#fff';
-
-    // loginBtn.classList.add(LOGIN);
   }
 }
 
 loginForm.addEventListener('keyup', login);
+
+loginBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log('??');
+  location.href = '../practice/practice.html';
+});

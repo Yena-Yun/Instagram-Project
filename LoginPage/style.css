@@ -97,17 +97,12 @@ p, span {
 	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: 0;
+	transition: opacity 1.5s ease-in-out;
 }
 
 .visible {
-	opacity: 1;
-	visibility: visible;
-}
-
-.next {
-	z-index: 2;
-	transition: opacity 1500s ease-in;
+	opacity: 0;
+	z-index: 1;
 }
 
 .right-side {

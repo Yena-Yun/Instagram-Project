@@ -35,11 +35,15 @@
 					<form action="">
 						<div class="login-form">
 							<div class="username input">
-								<input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+								<span class="placeholder username">전화번호, 사용자 이름 또는 이메일</span>
+								<input type="text" />
 							</div>
 							<div class="password input">
-								<input type="text" placeholder="비밀번호" />
-								<button type="button">비밀번호 표시</button>
+								<div class="pwd-input">
+									<span class="placeholder password">비밀번호</span>
+									<input type="password" />
+								</div>
+								<button class="show-password" type="button">비밀번호 표시</button>
 							</div>
 							<button type="submit" class="submit-btn">로그인</button>
 						</div>

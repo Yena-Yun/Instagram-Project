@@ -151,7 +151,30 @@ h1 {
 	border: 1px solid #dbdbdb;
 	border-radius: 2px;
 	margin-bottom: 6px;
+	font-size: 11px;
+	position: relative;
+}
+
+.username input {
+	z-index: 2;
+}
+
+.password input {
+	z-index: 2;
+}
+
+.placeholder {
+	color: #8e8e8e;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	transition: all .3s ease-out;
+}
+
+.up {
 	font-size: 10px;
+	top: 3px;
+	left: 3px;
 }
 
 .login-form .password {
@@ -160,6 +183,10 @@ h1 {
 
 .login-form .password input {
 	flex-grow: 1;
+}
+
+.show-password {
+	cursor: pointer;
 }
 
 .login-form .password button {

@@ -15,6 +15,7 @@ setInterval(() => {
 }, 2000);
 
 const userInputDiv = document.querySelector('.username input');
+console.log(userInputDiv);
 const passwordInputDiv = document.querySelector('.password input');
 const userPlaceholder = document.querySelector('.placeholder.username');
 const pwdPlaceholder = document.querySelector('.placeholder.password');
@@ -55,9 +56,48 @@ showPassword.addEventListener('click', () => {
 
   showPassword.textContent = '숨기기';
 
-  // console.log(pwdInput.getAttribute('type'));
   if (pwdInput.getAttribute('type') === 'text') {
     pwdInput.setAttribute('type', 'password');
     showPassword.textContent = '비밀번호 표시';
   }
 });
+
+const loginForm = document.querySelector('form.hello');
+console.log(loginForm);
+
+const loginBtn = document.querySelector('.login-form .submit-btn');
+
+console.dir(loginBtn);
+
+if (userInputDiv.value === 'ggg' && passwordInputDiv.value === '123') {
+  loginBtn.classList.add('login');
+}
+
+// loginForm.addEventListener('keyup', (e) => {
+//   // const usernameValue = e.target.
+//   const passwordValue = e.target.value;
+
+//   if (passwordValue === '123') {
+//     loginBtn.classList.add('login');
+//   }
+// });
+
+const userInputVal = document.querySelector('.username-input');
+const pwdInputVal = document.querySelector('.password-input');
+
+console.log(userInputVal.value);
+
+const LOGIN = 'login';
+
+function login(e) {
+  e.preventDefault();
+
+  if (userInputVal.value === 'ggg' && pwdInputVal.value === '123') {
+    loginBtn.style.backgroundColor = '#0095f6';
+    loginBtn.style.color = '#fff';
+
+    // loginBtn.classList.add(LOGIN);
+  }
+}
+
+loginForm.addEventListener('keyup', login);

@@ -100,6 +100,15 @@ main {
 	margin-bottom: 24px;
 	display: flex;
 	align-items: center;
+	padding: 0 24px;
+	position: relative;
+}
+
+.slide-container {
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	scroll-behavior: smooth;
 }
 
 .friends-list {
@@ -111,16 +120,45 @@ main {
 
 }
 
+.left-slide {
+	position: absolute;
+	top: 40px;
+	left: 8px;
+}
+
+.left-slide-btn {
+	background: url('../img/instagram_sprite_image.png') no-repeat -130px -98px;
+	width: 30px;
+	height: 30px;
+	/* display: none; */
+}
+
+.display {
+
+}
+
+.right-slide {
+	position: absolute;
+	top: 40px;
+	right: 8px;
+}
+
+.right-slide-btn {
+	background: url('../img/instagram_sprite_image.png') no-repeat -162px -98px;
+	width: 30px;
+	height: 30px;
+}
+
 .friend-info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-right: 17px;
 }
 
 .friend-image {
 	width: 60px;
 	height: 60px;
-	margin-right: 17px;
 }
 
 .friend-image img {
@@ -176,7 +214,6 @@ main {
 	width: 14px;
 	height: 4px;
 }
-
 
 .post-video-image {
 
@@ -318,14 +355,19 @@ aside {
 	height: 56px;
 }
 
+.profile-image img {
+	border-radius: 50%;
+}
+
 .user .user-name {
 	font-size: 13px;
 	font-weight: 600;
 	margin-left: 14px;
 }
 
-.profile-image img {
-	border-radius: 50%;
+.change-account {
+	color: #0095f6;
+	font-weight: 600;
 }
 
 .recommend {
@@ -361,21 +403,22 @@ aside {
 
 .recommended-user {
 	display: flex;
+	justify-content: space-between;
 	height: 48px;
 }
 
 .recommended-user .user-image {
-	flex: 1;
-	width: 60px;
-	height: 60px;
+	width: 32px;
+	height: 32px;
 }
 
 .recommended-user .user-image img {
+	width: 100%;
+	height: 100%;
 	border-radius: 50%;
 }
 
 .recommended-user .user-info {
-	flex: 4;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;

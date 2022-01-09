@@ -14,7 +14,6 @@ body {
 }
 
 button {
-	width: 100%;
 	border: none;
 	outline: none;
 	background: transparent;
@@ -22,7 +21,6 @@ button {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	padding: 0;
 }
 
 a {
@@ -46,8 +44,9 @@ img {
 	width: 100%;
 }
 
-ul {
+ul, li {
 	list-style: none;
+	padding: 0;
 }
 
 p,

@@ -1,3 +1,4 @@
+// 이미지 전환
 const imageArray = document.querySelectorAll('.banner-image');
 
 const VISIBLE = 'visible';
@@ -12,8 +13,9 @@ setInterval(() => {
   index++;
 
   if (index === imageArray.length) index = 0;
-}, 2000);
+}, 3000);
 
+// input의 placeholder 위치 조정
 const userInputDiv = document.querySelector('.username input');
 console.log(userInputDiv);
 const passwordInputDiv = document.querySelector('.password input');
@@ -44,6 +46,7 @@ passwordInputDiv.addEventListener('input', (e) => {
   }
 });
 
+// 비밀번호 표시 또는 숨기기
 const showPassword = document.querySelector('.show-password');
 console.log(showPassword.textContent);
 
@@ -62,6 +65,7 @@ showPassword.addEventListener('click', () => {
   }
 });
 
+// 특정 이메일과 비밀번호 입력 시 로그인 버튼색 바꾸기
 const loginForm = document.querySelector('form.hello');
 console.log(loginForm);
 
@@ -72,15 +76,6 @@ console.dir(loginBtn);
 if (userInputDiv.value === 'ggg' && passwordInputDiv.value === '123') {
   loginBtn.classList.add('login');
 }
-
-// loginForm.addEventListener('keyup', (e) => {
-//   // const usernameValue = e.target.
-//   const passwordValue = e.target.value;
-
-//   if (passwordValue === '123') {
-//     loginBtn.classList.add('login');
-//   }
-// });
 
 const userInputVal = document.querySelector('.username-input');
 const pwdInputVal = document.querySelector('.password-input');

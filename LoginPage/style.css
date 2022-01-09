@@ -93,16 +93,16 @@ p, span {
 	left: 136px;
 }
 
-.banner-image-inner img {
+.banner-image {
 	position: absolute;
 	top: 0;
 	left: 0;
+	opacity: 0;
 	transition: opacity 1.5s ease-in-out;
 }
 
 .visible {
-	opacity: 0;
-	z-index: 1;
+	opacity: 1;
 }
 
 .right-side {

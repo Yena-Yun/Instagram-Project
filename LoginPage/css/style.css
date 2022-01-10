@@ -184,17 +184,19 @@
 }
 
 .social-login {
+	display: flex;
+	justify-content: center;
 	margin: 8px 0;
 }
 
-.social-login .facebook {
+.facebook-sprite {
 	background: url("../img/instagram_sprite.png") -414px -259px;
 	width: 16px;
 	height: 16px;
 	margin-right: 8px;
 }
 
-.social-login .facebook-login {
+.facebook-login {
 	color: #385185;
 	font-size: 12px;
 	font-weight: 600;
@@ -225,7 +227,7 @@
 	font-size: 13px;
 }
 
-.no-account .signup {
+.signup {
 	font-size: 13px;
 	color: #0095f6;
 	font-weight: 500;
@@ -253,7 +255,7 @@
 	height: 36px;
 }
 
-.download-btn.app-store {
+.app-store {
 	margin-right: 10px;
 }
 

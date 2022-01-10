@@ -83,5 +83,5 @@ loginForm.addEventListener('keyup', login);
 
 loginBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  location.href = '../practice/practice.html';
+  location.href = '../MainPage/index.html';
 });

@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<canvas style="inset: 0px; pointer-events: none; position: fixed; z-index: 1000000000;" width="1087"
-	height="722"></canvas>
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Instagram/login</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<link href="http://fonts.cdnfonts.com/css/malgun-gothic-boot" rel="stylesheet">
 </head>
 
 <body>
 	<section class="login-page">
-		<main class="login-main">
+		<main class="main">
 			<div class="left-side">
 				<div class="banner-image-outter">
 					<div class="banner-image-inner">
@@ -29,23 +28,23 @@
 			<div class="right-side">
 				<div class="login-form-container">
 					<div class="logo">
-						<h1></h1>
-						<span>Instagram</span>
+						<h1 class="logo-title"></h1>
+						<span class="logo-title-span">Instagram</span>
 					</div>
-					<form action="" class="hello">
-						<div class="login-form">
-							<div class="username input">
-								<span class="placeholder username">전화번호, 사용자 이름 또는 이메일</span>
-								<input type="text" class="username-input" />
+					<form class="login-form">
+						<div class="login-box">
+							<div class="username-inputbox">
+								<span class="username placeholder">전화번호, 사용자 이름 또는 이메일</span>
+								<input class="username-input" type="text" />
 							</div>
-							<div class="password input">
-								<div class="pwd-input">
-									<span class="placeholder password">비밀번호</span>
-									<input type="password" class="password-input" />
+							<div class="password-wrap">
+								<div class="password-inputbox">
+									<span class="password placeholder">비밀번호</span>
+									<input class="password-input" type="password" />
 								</div>
 								<button class="show-password" type="button">비밀번호 표시</button>
 							</div>
-							<button type="submit" class="submit-btn">로그인</button>
+							<button class="submit-btn" type="submit">로그인</button>
 						</div>
 						<div class="separate-line">
 							<div class="line"></div>

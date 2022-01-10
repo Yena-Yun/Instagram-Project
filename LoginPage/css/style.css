@@ -1,59 +1,3 @@
-* {
-	margin: 0;
-	box-sizing: border-box;
-}
-
-html,
-body {
-	width: 100%;
-	height: 100%;
-	font-family: 'Malgun Gothic Boot',
-	sans-serif;
-}
-
-button {
-	width: 100%;
-	border: none;
-	outline: none;
-	background: transparent;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-input {
-	width: 100%;
-	height: 36px;
-	font-size: 12px;
-	padding: 9px 0 7px 8px;
-	border: none;
-	background: #fafafa;
-}
-
-input:active,
-input:focus {
-	border: none;
-	outline: none;
-}
-
-img {
-	display: block;
-	width: 100%;
-}
-
-ul {
-	list-style: none;
-}
-
-p, span {
-	letter-spacing: -0.04em;
-}
-
 .login-page {
 	height: 100%;
 	background: #fafafa;
@@ -64,7 +8,7 @@ p, span {
 	overflow: auto;
 }
 
-.login-main {
+.main {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -129,24 +73,24 @@ p, span {
 	justify-content: center;
 }
 
-h1 {
-	background: url("img/instagram_sprite.png") 0 -130px;
+.logo-title {
+	background: url("../img/instagram_sprite.png") 0 -130px;
 	width: 175px;
 	height: 51px;
 }
 
-.logo span {
+.logo-title-span {
 	display: none;
 }
 
-.login-form {
+.login-box {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 24px;
 }
 
-.login-form .input {
+.username-inputbox {
 	width: 100%;
 	border: 1px solid #dbdbdb;
 	border-radius: 2px;
@@ -155,20 +99,31 @@ h1 {
 	position: relative;
 }
 
-.username input {
+.password-wrap {
+	width: 100%;
+	border: 1px solid #dbdbdb;
+	border-radius: 2px;
+	margin-bottom: 6px;
+	font-size: 11px;
+	position: relative;
+}
+
+.username-input {
 	z-index: 2;
 }
 
-.password input {
+.password-input {
 	z-index: 2;
 }
 
 .placeholder {
 	color: #8e8e8e;
+	height: 8px;
 	position: absolute;
 	top: 10px;
 	left: 10px;
 	transition: all .3s ease-out;
+	pointer-events: none;
 }
 
 .up {
@@ -177,26 +132,23 @@ h1 {
 	left: 8px;
 }
 
-.login-form .password {
+.password-wrap {
 	display: flex;
 }
 
-.login-form .password input {
+.password-input {
 	flex-grow: 1;
 }
 
 .show-password {
-	cursor: pointer;
-}
-
-.login-form .password button {
-	width: 160px;
+	width: 90px;
+	height: 40px;
 	font-size: 12px;
 	font-weight: 600;
 	background: #fafafa;
 }
 
-.login-form .submit-btn {
+.submit-btn {
 	height: 30px;
 	margin: 8px 0;
 	background: #b2dffc;
@@ -236,7 +188,7 @@ h1 {
 }
 
 .social-login .facebook {
-	background: url("img/instagram_sprite.png") -414px -259px;
+	background: url("../img/instagram_sprite.png") -414px -259px;
 	width: 16px;
 	height: 16px;
 	margin-right: 8px;

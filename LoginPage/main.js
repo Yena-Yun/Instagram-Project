@@ -16,17 +16,14 @@ setInterval(() => {
 }, 3000);
 
 // input의 placeholder 위치 조정
-const userInputDiv = document.querySelector('.username input');
-console.log(userInputDiv);
-const passwordInputDiv = document.querySelector('.password input');
-const userPlaceholder = document.querySelector('.placeholder.username');
-const pwdPlaceholder = document.querySelector('.placeholder.password');
-const pwdInput = document.querySelector('.pwd-input input');
-console.log(pwdInput);
+const usernameInput = document.querySelector('.username-input');
+const passwordInput = document.querySelector('.password-input');
+const userPlaceholder = document.querySelector('.username.placeholder');
+const pwdPlaceholder = document.querySelector('.password.placeholder');
 
 const UP = 'up';
 
-userInputDiv.addEventListener('input', (e) => {
+usernameInput.addEventListener('input', (e) => {
   const v = e.target.value;
 
   if (v) {
@@ -36,7 +33,7 @@ userInputDiv.addEventListener('input', (e) => {
   }
 });
 
-passwordInputDiv.addEventListener('input', (e) => {
+passwordInput.addEventListener('input', (e) => {
   const v = e.target.value;
 
   if (v) {
@@ -48,39 +45,32 @@ passwordInputDiv.addEventListener('input', (e) => {
 
 // 비밀번호 표시 또는 숨기기
 const showPassword = document.querySelector('.show-password');
-console.log(showPassword.textContent);
 
-console.log(pwdInput.getAttribute('type'));
+console.log(showPassword);
 
 showPassword.addEventListener('click', () => {
-  pwdInput.setAttribute('type', 'text');
+  console.log(passwordInput);
 
-  console.log(pwdInput.getAttribute('type'));
-
-  showPassword.textContent = '숨기기';
-
-  if (pwdInput.getAttribute('type') === 'text') {
-    pwdInput.setAttribute('type', 'password');
-    showPassword.textContent = '비밀번호 표시';
+  if (passwordInput.getAttribute('type') === 'text') {
+    passwordInput.setAttribute('type', 'password');
+    showPassword.innerText = '비밀번호 표시';
+  } else {
+    passwordInput.setAttribute('type', 'text');
+    showPassword.innerText = '숨기기';
+    showPassword.style.justifyContent = 'flex-end';
   }
 });
 
 // 특정 이메일과 비밀번호 입력 시 로그인 버튼색 바꾸기
-const loginForm = document.querySelector('form.hello');
-console.log(loginForm);
+const loginForm = document.querySelector('.login-form');
+const loginBtn = document.querySelector('.submit-btn');
 
-const loginBtn = document.querySelector('.login-form .submit-btn');
-
-console.dir(loginBtn);
-
-if (userInputDiv.value === 'ggg' && passwordInputDiv.value === '123') {
+if (usernameInput.value === 'ggg' && passwordInput.value === '123') {
   loginBtn.classList.add('login');
 }
 
 const userInputVal = document.querySelector('.username-input');
 const pwdInputVal = document.querySelector('.password-input');
-
-console.log(userInputVal.value);
 
 const LOGIN = 'login';
 
@@ -97,6 +87,5 @@ loginForm.addEventListener('keyup', login);
 
 loginBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  console.log('??');
   location.href = '../practice/practice.html';
 });

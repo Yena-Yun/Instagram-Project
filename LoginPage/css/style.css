@@ -175,7 +175,7 @@
 	background: #dbdbdb;
 }
 
-.separate-line p {
+.separate-line .or {
 	width: 30px;
 	color: #8e8e8e;
 	margin: 0 18px;
@@ -194,7 +194,7 @@
 	margin-right: 8px;
 }
 
-.social-login p {
+.social-login .facebook-login {
 	color: #385185;
 	font-size: 12px;
 	font-weight: 600;
@@ -221,11 +221,11 @@
 	border-radius: 2px;
 }
 
-.no-account p {
+.no-account .text {
 	font-size: 13px;
 }
 
-.no-account a {
+.no-account .signup {
 	font-size: 13px;
 	color: #0095f6;
 	font-weight: 500;
@@ -237,7 +237,7 @@
 	align-items: center;
 }
 
-.download p {
+.download .text {
 	font-size: 12px;
 	margin: 8px 0 18px;
 }
@@ -248,16 +248,16 @@
 	justify-content: center;
 }
 
-.download-btn-image {
+.download-btn {
 	width: 120px;
 	height: 36px;
 }
 
-.app-store-btn {
+.download-btn.app-store {
 	margin-right: 10px;
 }
 
-.download-btn-image img {
+.app-store-img {
 	display: block;
 	width: 100%;
 	height: 100%;

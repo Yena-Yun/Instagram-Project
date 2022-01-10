@@ -46,11 +46,7 @@ passwordInput.addEventListener('input', (e) => {
 // 비밀번호 표시 또는 숨기기
 const showPassword = document.querySelector('.show-password');
 
-console.log(showPassword);
-
 showPassword.addEventListener('click', () => {
-  console.log(passwordInput);
-
   if (passwordInput.getAttribute('type') === 'text') {
     passwordInput.setAttribute('type', 'password');
     showPassword.innerText = '비밀번호 표시';

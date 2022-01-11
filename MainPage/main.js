@@ -36,50 +36,23 @@ slideContainer.addEventListener('scroll', () => {
   }
 });
 
-// hover?
-const postIcon = document.querySelector('.post-icon');
-console.log(postIcon);
-
-postIcon.addEventListener('mouseover', (e) => {
-  if (e.target.getAttribute('fill') === '#262626') {
-    e.target.setAttribute('fill', '#8e8e8e');
-  } else {
-    e.target.setAttribute('fill', '#262626');
-  }
-});
-
-postIcon.addEventListener('mouseout', (e) => {
-  if (e.target.getAttribute('fill') === '#262626') {
-    e.target.setAttribute('fill', '#8e8e8e');
-  } else {
-    e.target.setAttribute('fill', '#262626');
-  }
-});
-
 // 좋아요 하기
-const likeHeart = document.querySelector('.like-heart');
-const likeCancel = document.querySelector('.like-cancel');
-const likeNumber = document.querySelector('.likes-number');
+const likeBefore = document.querySelector('.like-before');
+const likeAfter = document.querySelector('.like-after');
+const likeNumber = document.querySelector('.like-number');
 
-console.log(likeHeart);
+likeAfter.style.display = 'none';
 
-likeCancel.style.display = 'none';
-likeHeart.style.display = 'block';
+likeBefore.addEventListener('click', () => {
+  likeBefore.style.display = 'none';
+  likeAfter.style.display = 'block';
+  likeNumber.innerText = Number(likeNumber.innerText) + 1;
+});
 
-likeHeart.addEventListener('click', (e) => {
-  likeHeart.style.display = 'none';
-  likeCancel.style.display = 'block';
-
-  // const heartColor = e.target.getAttribute('fill');
-  // if (heartColor === '#262626') {
-  //   e.target.setAttribute('fill', '#ed4956');
-  //   e.target.setAttribute('color', '#ed4956');
-  //   likeNumber.innerText = Number(likeNumber.innerText) + 1;
-  // } else {
-  //   e.target.setAttribute('fill', '#262626');
-  //   e.target.setAttribute('color', '#262626');
-  //   likeNumber.innerText = Number(likeNumber.innerText) - 1;
-  // }
+likeAfter.addEventListener('click', () => {
+  likeBefore.style.display = 'block';
+  likeAfter.style.display = 'none';
+  likeNumber.innerText = Number(likeNumber.innerText) - 1;
 });
 
 // 댓글 달기
@@ -88,21 +61,17 @@ const commentList = document.querySelector('.comment-list');
 const commentInput = document.querySelector('.comment-input');
 const submitComment = document.querySelector('.submit-comment');
 
-function paintComment(newComment) {
+function renderComment(newComment) {
   const li = document.createElement('li');
-
   li.innerText = newComment;
-
   commentList.appendChild(li);
 }
 
 function onCommentSubmit(e) {
   e.preventDefault();
-
   const newComment = commentInput.value;
   commentInput.value = '';
-
-  paintComment(newComment);
+  renderComment(newComment);
 }
 
 commentForm.addEventListener('submit', onCommentSubmit);

@@ -45,10 +45,6 @@ header {
 	position: absolute;
 	top: 6px;
 	left: 14px;
-	/* display: block;
-	width: 24px;
-	height: 24px;
-	background: url('../assets/svg/search.svg'); */
 }
 
 .search-input input {
@@ -118,10 +114,6 @@ main {
 .friends-list {
 	width: 100%;
 	display: flex;
-}
-
-.friend {
-
 }
 
 .left-slide {
@@ -233,16 +225,6 @@ main {
 	height: 30px;
 	margin-right: 10px;
 	cursor: pointer;
-}
-
-.post-header-icons .icon:hover {
-	stroke: #cfcfcf;
-}
-
-.like-box:hover,
-.comment:hover,
-.share:hover {
-	stroke: #cfcfcf;
 }
 
 .bookmark {
@@ -394,10 +376,6 @@ aside {
 	font-weight: 600;
 }
 
-.recommend {
-
-}
-
 .recommend-header {
 	display: flex;
 	justify-content: space-between;
@@ -483,7 +461,6 @@ footer {
 
 .second {
 	display: flex;
-
 }
 
 .footer-item, .dot {

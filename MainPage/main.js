@@ -51,21 +51,13 @@ function renderFriends() {
   console.log(friend);
 
   friendList.appendChild(friend);
-  friendList.appendChild(friend);
-  friendList.appendChild(friend);
 }
 
 for (let i = 0; i < 16; i++) {
   renderFriends();
 }
 
-function renderComment(newComment) {
-  const li = document.createElement('li');
-  li.innerText = newComment;
-  commentList.appendChild(li);
-}
-
-// // hover?
+// // 아이콘에 hover 효과
 // const postIcon = document.querySelector('.post-header-icons .icon');
 // console.log(postIcon);
 
@@ -133,3 +125,36 @@ moreContent.addEventListener('click', () => {
   postDesc.classList.toggle('more-initial');
   moreContent.classList.add('none');
 });
+
+// 사이드바에 추천 유저 추가
+function renderFollower() {
+  const recommendedUserList = document.querySelector('.recommended-userlist');
+  const recommendedUser = document.createElement('li');
+  const userImage = document.createElement('div');
+  const totoro = document.createElement('img');
+  const userInfo = document.createElement('div');
+  const userName = document.createElement('div');
+  const userDesc = document.createElement('div');
+  const followBtn = document.createElement('button');
+
+  recommendedUser.classList.add('recommended-user');
+  userImage.classList.add('user-image');
+  totoro.setAttribute('src', 'assets/image/totoro.jpg');
+  totoro.setAttribute('alt', 'recommended-user');
+  userInfo.classList.add('user-info');
+  userName.classList.add('user-name');
+  userName.innerText = '0_ggaebi';
+  userDesc.classList.add('user-desc');
+  userDesc.innerText = 'ju_ju_1210님 외 3명이 팔로우합니다';
+  followBtn.classList.add('follow-btn');
+  followBtn.innerText = '팔로우';
+
+  userImage.appendChild(totoro);
+  userInfo.append(userName, userDesc);
+  recommendedUser.append(userImage, userInfo, followBtn);
+  recommendedUserList.appendChild(recommendedUser);
+}
+
+for (let i = 0; i < 5; i++) {
+  renderFollower();
+}

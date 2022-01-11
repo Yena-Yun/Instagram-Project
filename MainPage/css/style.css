@@ -28,7 +28,7 @@ header {
 }
 
 .logo-image {
-	background: url('../img/instagram_sprite_image.png') no-repeat -122px -226px;
+	background: url('../assets/image/instagram_sprite_image.png') no-repeat -122px -226px;
 	width: 103px;
 	height: 29px;
 }

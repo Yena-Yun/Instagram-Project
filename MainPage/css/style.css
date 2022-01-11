@@ -131,10 +131,9 @@ main {
 }
 
 .left-slide-btn {
-	background: url('../img/instagram_sprite_image.png') no-repeat -130px -98px;
+	background: url('../assets/image/instagram_sprite_image.png') no-repeat -130px -98px;
 	width: 30px;
 	height: 30px;
-	/* display: none; */
 }
 
 .right-slide {
@@ -144,7 +143,7 @@ main {
 }
 
 .right-slide-btn {
-	background: url('../img/instagram_sprite_image.png') no-repeat -162px -98px;
+	background: url('../assets/image/instagram_sprite_image.png') no-repeat -162px -98px;
 	width: 30px;
 	height: 30px;
 }
@@ -236,6 +235,20 @@ main {
 	cursor: pointer;
 }
 
+.post-header-icons .icon:hover {
+	stroke: #cfcfcf;
+}
+
+.like-box:hover,
+.comment:hover,
+.share:hover {
+	stroke: #cfcfcf;
+}
+
+.bookmark {
+	cursor: pointer;
+}
+
 .like-box {
 	position: relative;
 }
@@ -245,9 +258,6 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .post-info-section {

@@ -1,12 +1,3 @@
-// 게시글 더보기 line-clamp
-const moreContent = document.querySelector('.more-content');
-const postDesc = document.querySelector('.post-desc');
-
-moreContent.addEventListener('click', () => {
-  postDesc.classList.toggle('more-initial');
-  moreContent.classList.add('none');
-});
-
 // 이미지 슬라이드
 const slideContainer = document.querySelector('.slide-container');
 const leftBtn = document.querySelector('.left-slide-btn');
@@ -35,6 +26,64 @@ slideContainer.addEventListener('scroll', () => {
     leftBtn.style.display = 'block';
   }
 });
+
+// 친구 리스트에 유저 추가
+function renderFriends() {
+  const friendList = document.querySelector('.friends-list');
+  const friend = document.createElement('li');
+  const friendInfo = document.createElement('div');
+  const friendImage = document.createElement('div');
+  const unicorn = document.createElement('img');
+  const friendName = document.createElement('div');
+
+  friend.classList.add('friend');
+  friendInfo.classList.add('friend-info');
+  friendImage.classList.add('friend-image');
+  unicorn.setAttribute('src', 'assets/image/unicorn.png');
+  unicorn.setAttribute('alt', 'friend-user-image');
+  friendName.classList.add('friend-name');
+  friendName.innerText = 'unicorn';
+
+  friendImage.appendChild(unicorn);
+  friendInfo.append(friendImage, friendName);
+  friend.appendChild(friendInfo);
+
+  console.log(friend);
+
+  friendList.appendChild(friend);
+  friendList.appendChild(friend);
+  friendList.appendChild(friend);
+}
+
+for (let i = 0; i < 16; i++) {
+  renderFriends();
+}
+
+function renderComment(newComment) {
+  const li = document.createElement('li');
+  li.innerText = newComment;
+  commentList.appendChild(li);
+}
+
+// // hover?
+// const postIcon = document.querySelector('.post-header-icons .icon');
+// console.log(postIcon);
+
+// postIcon.addEventListener('mouseover', (e) => {
+//   if (e.target.getAttribute('color') === '#262626') {
+//     e.target.setAttribute('color', '#8e8e8e');
+//   } else {
+//     e.target.setAttribute('color', '#262626');
+//   }
+// });
+
+// postIcon.addEventListener('mouseout', (e) => {
+//   if (e.target.getAttribute('color') === '#262626') {
+//     e.target.setAttribute('color', '#8e8e8e');
+//   } else {
+//     e.target.setAttribute('color', '#262626');
+//   }
+// });
 
 // 좋아요 하기
 const likeBefore = document.querySelector('.like-before');
@@ -75,3 +124,12 @@ function onCommentSubmit(e) {
 }
 
 commentForm.addEventListener('submit', onCommentSubmit);
+
+// 게시글 더보기 line-clamp
+const moreContent = document.querySelector('.more-content');
+const postDesc = document.querySelector('.post-desc');
+
+moreContent.addEventListener('click', () => {
+  postDesc.classList.toggle('more-initial');
+  moreContent.classList.add('none');
+});

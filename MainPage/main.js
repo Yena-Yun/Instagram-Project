@@ -57,26 +57,6 @@ for (let i = 0; i < 16; i++) {
   renderFriends();
 }
 
-// // 아이콘에 hover 효과
-// const postIcon = document.querySelector('.post-header-icons .icon');
-// console.log(postIcon);
-
-// postIcon.addEventListener('mouseover', (e) => {
-//   if (e.target.getAttribute('color') === '#262626') {
-//     e.target.setAttribute('color', '#8e8e8e');
-//   } else {
-//     e.target.setAttribute('color', '#262626');
-//   }
-// });
-
-// postIcon.addEventListener('mouseout', (e) => {
-//   if (e.target.getAttribute('color') === '#262626') {
-//     e.target.setAttribute('color', '#8e8e8e');
-//   } else {
-//     e.target.setAttribute('color', '#262626');
-//   }
-// });
-
 // 좋아요 하기
 const likeBefore = document.querySelector('.like-before');
 const likeAfter = document.querySelector('.like-after');
@@ -104,6 +84,11 @@ const submitComment = document.querySelector('.submit-comment');
 
 function renderComment(newComment) {
   const li = document.createElement('li');
+  const userSpan = document.createElement('span');
+
+  userSpan.textContent = '0_ggaebi';
+  li.appendChild(userSpan);
+
   li.innerText = newComment;
   commentList.appendChild(li);
 }

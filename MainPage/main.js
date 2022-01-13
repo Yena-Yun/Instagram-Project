@@ -84,11 +84,19 @@ const submitComment = document.querySelector('.submit-comment');
 
 function renderComment(newComment) {
   const li = document.createElement('li');
-  const userSpan = document.createElement('span');
+  const userSpan = document.createElement('p');
+  // const space = document.createElement('span');
 
-  userSpan.textContent = '0_ggaebi';
+  userSpan.style.marginRight = '20px';
+  // space.innerText = '  ';
+
+  userSpan.innerText = '0_ggaebi';
   li.appendChild(userSpan);
 
+  console.log(li);
+
+  // li.insertBefore('0_ggaebi' + newComment);
+  // li.innerText = `0_ggaebi ${newComment}`;
   li.innerText = newComment;
   commentList.appendChild(li);
 }

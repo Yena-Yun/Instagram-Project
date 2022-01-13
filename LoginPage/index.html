@@ -139,6 +139,29 @@
 			</div>
 		</footer>
 	</section>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDynWcs4P0RuOEnH6DRAL_77NHU-FpqOXc",
+    authDomain: "instagram-project-28f94.firebaseapp.com",
+    projectId: "instagram-project-28f94",
+    storageBucket: "instagram-project-28f94.appspot.com",
+    messagingSenderId: "122437651328",
+    appId: "1:122437651328:web:e32b9cc2a596887469cf65",
+    measurementId: "G-T9NJP5Z662"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 <script src="main.js"></script>
 </body>

@@ -23,7 +23,7 @@
 
 ### 🍫 메인페이지
 * 좌우 버튼 클릭 시 친구 리스트 슬라이드 넘기기
-* <img width="600" src="https://user-images.githubusercontent.com/68722179/149489443-14606402-b21f-4d72-85af-5373a9d9be90.gif" />
+* <img width="600" src="https://user-images.githubusercontent.com/68722179/149501601-5e1b7456-84f0-4124-b5c8-7bc0539ac963.gif" />
 
 * 게시글 좋아요 및 더보기(line-clamp) 
 * <img width="600" src="https://user-images.githubusercontent.com/68722179/149500379-0315204c-3cc4-4bc5-8636-c0c3b15f1fc7.gif" />

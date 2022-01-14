@@ -2,6 +2,7 @@
 
 ### 🐭 배포링크
 <h2><a href="https://nostalgic-hopper-e1df41.netlify.app">https://nostalgic-hopper-e1df41.netlify.app</a></h2>
+<h3>(아이디: ggg, 비밀번호: 123 로 로그인하면 메인페이지로 이동 가능)</h3>
 
 ### 🎀 구현화면
 1. 진입페이지

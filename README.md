@@ -25,8 +25,8 @@
 * 좌우 버튼 클릭 시 친구 리스트 슬라이드 넘기기
 <img width="600" src="https://user-images.githubusercontent.com/68722179/149489443-14606402-b21f-4d72-85af-5373a9d9be90.gif" />
 
-* 게시글 좋아요 및 더보기 기능 (line-clamp) 
-<img width="600" src="" />
+* 게시글 좋아요 및 더보기 기능(line-clamp) 
+<img width="600" src="https://user-images.githubusercontent.com/68722179/149498516-e8821426-488a-49eb-921c-54032a90a204.gif" />
 
 * 댓글 작성하기
-<imig width="600" src="" />
+<imig width="600" src="https://user-images.githubusercontent.com/68722179/149498560-ff1157f5-593a-4fa5-9859-510bff7c0d00.gif" />

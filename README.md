@@ -1,9 +1,9 @@
-# 바닐라 자바스크립트로 인스타그램 클론하기
+# Vanilla Javascript로 인스타그램 클론
 
-## 🐭 배포링크
-<h2><a href="nostalgic-hopper-e1df41.netlify.app" /></h2>
+### 🐭 배포링크
+<h2><a href="nostalgic-hopper-e1df41.netlify.app">https://nostalgic-hopper-e1df41.netlify.app</a></h2>
 
-## 🎀 구현화면
+### 🎀 구현화면
 1. 진입페이지
 2. 로그인페이지
 3. 메인페이지

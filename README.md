@@ -1,7 +1,7 @@
 # Vanilla Javascript로 인스타그램 클론
 
 ## 🐭 배포링크
-<h2><https://nostalgic-hopper-e1df41.netlify.app>{: target="_blank"}</h2>
+<https://nostalgic-hopper-e1df41.netlify.app>{: target="_blank"}
 <h4>(아이디: hello, 비밀번호: 123 로 로그인)</h3>
 
 ## 🎀 구현화면

@@ -57,7 +57,16 @@ for (let i = 0; i < 16; i++) {
   renderFriends();
 }
 
-// 좋아요 하기
+// 게시글 더보기 line-clamp
+const moreContent = document.querySelector('.more-content');
+const postDesc = document.querySelector('.post-desc');
+
+moreContent.addEventListener('click', () => {
+  postDesc.classList.toggle('more-initial');
+  moreContent.classList.add('none');
+});
+
+// 게시글 좋아요 (하트색깔 바뀌고 좋아요 개수 + 1)
 const likeBefore = document.querySelector('.like-before');
 const likeAfter = document.querySelector('.like-after');
 const likeNumber = document.querySelector('.like-number');
@@ -97,7 +106,6 @@ function renderComment(newComment) {
 
   li.append(userSpan, commentSpan);
 
-  // li.innerText = `0_ggaebi ${newComment}`;
   commentList.appendChild(li);
 }
 
@@ -109,15 +117,6 @@ function onCommentSubmit(e) {
 }
 
 commentForm.addEventListener('submit', onCommentSubmit);
-
-// 게시글 더보기 line-clamp
-const moreContent = document.querySelector('.more-content');
-const postDesc = document.querySelector('.post-desc');
-
-moreContent.addEventListener('click', () => {
-  postDesc.classList.toggle('more-initial');
-  moreContent.classList.add('none');
-});
 
 // 사이드바에 추천 유저 추가
 function renderFollower() {

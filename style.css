@@ -13,7 +13,7 @@ body {
 	background: #6b3dc9;
 	color: #fff;
 	width: 240px;
-	height: 70px;
+	height: 60px;
 	box-shadow: inset 000px 0px 0px 0px #ffa03f;
 	-webkit-transition: all 0.8s cubic-bezier(0.9, 0.24, 0.4, 1);
 	transition: all 0.8s cubic-bezier(0.9, 0.24, 0.4, 1);

@@ -4,6 +4,9 @@
 <h2><a href="https://nostalgic-hopper-e1df41.netlify.app">https://nostalgic-hopper-e1df41.netlify.app</a></h2>
 <h4>(아이디: hello, 비밀번호: 123 로 로그인)</h3>
 
+## ⌛ 개발기간
+<h5>2022.01.03 ~ 2022.01.13</h5>
+
 ## 🎀 구현화면
 1. 진입페이지
 2. 로그인페이지

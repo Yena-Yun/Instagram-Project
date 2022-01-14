@@ -29,3 +29,4 @@
 <img width="600" src="https://user-images.githubusercontent.com/68722179/149500379-0315204c-3cc4-4bc5-8636-c0c3b15f1fc7.gif" />
 
 * 그외 댓글 작성하기 기능 추가
+* <img width="600" src="https://user-images.githubusercontent.com/68722179/149500680-00c55fb8-fb87-406a-8b12-ceba8d68ecde.gif" />

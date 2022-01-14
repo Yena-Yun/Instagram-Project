@@ -2,7 +2,7 @@
 
 ### 🐭 배포링크
 <h2><a href="https://nostalgic-hopper-e1df41.netlify.app">https://nostalgic-hopper-e1df41.netlify.app</a></h2>
-<h3>(로그인페이지에서 아이디: hello_ari, 비밀번호: 123 로 로그인)</h3>
+<h3>(로그인페이지에서 아이디: hello, 비밀번호: 123 로 로그인)</h3>
 
 ### 🎀 구현화면
 1. 진입페이지

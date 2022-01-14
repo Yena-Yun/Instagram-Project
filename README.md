@@ -1,8 +1,10 @@
 # Instagram-Project
 
-순수 바닐라 자바스크립트로 만든 프로젝트입니다.
+## 👓 스택
+HTML, CSS, Vanilla Javascript
 
-## 🐭 배포: nostalgic-hopper-e1df41.netlify.app
+## 🐭 배포
+<a href="nostalgic-hopper-e1df41.netlify.app" />
 
 ## 🎀 구현화면
 1. 진입페이지

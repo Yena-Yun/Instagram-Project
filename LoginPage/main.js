@@ -73,7 +73,7 @@ const LOGIN = 'login';
 function login(e) {
   e.preventDefault();
 
-  if (userInputVal.value === 'ggg' && pwdInputVal.value === '123') {
+  if (userInputVal.value === 'hello' && pwdInputVal.value === '123') {
     loginBtn.style.backgroundColor = '#0095f6';
     loginBtn.style.color = '#fff';
   }

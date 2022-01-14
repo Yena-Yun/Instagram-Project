@@ -28,5 +28,4 @@
 * 게시글 좋아요 및 더보기 기능(line-clamp) 
 <img width="600" src="https://user-images.githubusercontent.com/68722179/149498516-e8821426-488a-49eb-921c-54032a90a204.gif" />
 
-* 댓글 작성하기
-<imig width="600" src="https://user-images.githubusercontent.com/68722179/149498560-ff1157f5-593a-4fa5-9859-510bff7c0d00.gif" />
+* 그외 댓글 작성하기 추가

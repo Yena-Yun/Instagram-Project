@@ -88,8 +88,7 @@ likeAfter.addEventListener('click', () => {
 // 댓글 달기
 const commentForm = document.querySelector('.comment-form');
 const commentList = document.querySelector('.comment-list');
-const commentInput = document.querySelector('.comment-input');
-const submitComment = document.querySelector('.submit-comment');
+const commentInput = document.querySelector('.comment-textarea');
 
 function renderComment(newComment) {
   const li = document.createElement('li');
@@ -113,6 +112,7 @@ function onCommentSubmit(e) {
   e.preventDefault();
   const newComment = commentInput.value;
   commentInput.value = '';
+  commentInput.focus();
   renderComment(newComment);
 }
 

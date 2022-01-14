@@ -2,7 +2,7 @@
 
 ### 🐭 배포링크
 <h2><a href="https://nostalgic-hopper-e1df41.netlify.app">https://nostalgic-hopper-e1df41.netlify.app</a></h2>
-<h3>(로그인페이지에서 아이디: hello, 비밀번호: 123 로 로그인)</h3>
+<h3>(아이디: hello, 비밀번호: 123 로 로그인)</h3>
 
 ### 🎀 구현화면
 1. 진입페이지
@@ -28,5 +28,5 @@
 * 게시글 좋아요 및 더보기 기능 (line-clamp) 
 <img width="600" src="" />
 
-* 댓글 기능
+* 댓글 작성하기
 <imig width="600" src="" />

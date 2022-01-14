@@ -14,9 +14,9 @@ body {
 	color: #fff;
 	width: 240px;
 	height: 60px;
-	box-shadow: inset 000px 0px 0px 0px #ffa03f;
-	-webkit-transition: all 0.8s cubic-bezier(0.9, 0.24, 0.4, 1);
-	transition: all 0.8s cubic-bezier(0.9, 0.24, 0.4, 1);
+	box-shadow: inset 000px 0px 0px 0px #f66c49;
+	-webkit-transition: all 0.6s cubic-bezier(0.9, 0.24, 0.4, 1);
+	transition: all 0.6s cubic-bezier(0.9, 0.24, 0.4, 1);
 }
 
 .move-to-login:first-child::before {

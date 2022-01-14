@@ -19,13 +19,13 @@
 * 인풋창 입력 시 placeholder 글자 크기와 위치가 변하는 효과
 * 비밀번호 표시 또는 숨기기
 * 로그인 버튼을 누르면 메인페이지로 이동 
-<img width="600" src="https://user-images.githubusercontent.com/68722179/149489363-36e99041-2935-4f34-869d-73047ab8fbf5.gif" />
+<img width="600" src="https://user-images.githubusercontent.com/68722179/149500395-cd598b18-80f8-4a67-933d-d9f6808c65e0.gif" />
 
 ### 🍫 메인페이지
 * 좌우 버튼 클릭 시 친구 리스트 슬라이드 넘기기
 <img width="600" src="https://user-images.githubusercontent.com/68722179/149489443-14606402-b21f-4d72-85af-5373a9d9be90.gif" />
 
 * 게시글 좋아요 및 더보기 기능(line-clamp) 
-<img width="600" src="https://user-images.githubusercontent.com/68722179/149498516-e8821426-488a-49eb-921c-54032a90a204.gif" />
+<img width="600" src="https://user-images.githubusercontent.com/68722179/149500379-0315204c-3cc4-4bc5-8636-c0c3b15f1fc7.gif" />
 
-* 그외 댓글 작성하기 추가
+* 그외 댓글 작성하기 기능 추가

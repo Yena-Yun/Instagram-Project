@@ -57,11 +57,11 @@ showPassword.addEventListener('click', () => {
   }
 });
 
-// 특정 이메일과 비밀번호 입력 시 로그인 버튼색 바꾸기
+// 로그인하기
 const loginForm = document.querySelector('.login-form');
 const loginBtn = document.querySelector('.submit-btn');
 
-if (usernameInput.value === 'ggg' && passwordInput.value === '123') {
+if (usernameInput.value === 'hello_ari' && passwordInput.value === '123') {
   loginBtn.classList.add('login');
 }
 

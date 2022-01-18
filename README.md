@@ -11,22 +11,24 @@
 로그인페이지와 메인페이지 모두 <b>반응형</b>으로 구현하였습니다.
 
 ### 🌊 로그인페이지
-* 배너의 휴대폰 이미지가 넘어가는 효과 (setInterval)
-* 인풋창 입력 시 placeholder 글자 크기와 위치가 변하는 효과
-* 비밀번호 표시 또는 숨기기
-* 로그인 버튼을 누르면 메인페이지로 이동 
+* setInterval로 휴대폰 이미지 반복 전환
+* 인풋창 입력 시 placeholder 텍스트가 위로 올라감
+* 특정 아이디와 비밀번호로 로그인해야 로그인 버튼 활성화
+* 비밀번호 숨기기 또는 표시 가능
+* 로그인을 하면 메인 페이지로 이동
 
  <img width="600" src="https://user-images.githubusercontent.com/68722179/149500395-cd598b18-80f8-4a67-933d-d9f6808c65e0.gif" />
 
 ### 🍫 메인페이지
-* 좌우 버튼 클릭 시 친구 리스트 슬라이드 넘기기
+* 친구리스트 좌우 버튼 클릭 시 슬라이드 넘기기
 
  <img width="600" src="https://user-images.githubusercontent.com/68722179/149501601-5e1b7456-84f0-4124-b5c8-7bc0539ac963.gif" />
 
-* 게시글 좋아요 및 더보기(line-clamp) 
+* 게시글 좋아요 (하트 색깔 변경, 좋아요 개수 추가)
+* 게시글 더보기 기능 (line-clamp)
 
  <img width="600" src="https://user-images.githubusercontent.com/68722179/149500379-0315204c-3cc4-4bc5-8636-c0c3b15f1fc7.gif" />
 
-* 게시글에 댓글 작성하기
+* 댓글 작성 및 게시
 
  <img width="600" src="https://user-images.githubusercontent.com/68722179/149500680-00c55fb8-fb87-406a-8b12-ceba8d68ecde.gif" />

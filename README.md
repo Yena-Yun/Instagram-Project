@@ -1,14 +1,15 @@
-# Vanilla Javascript로 인스타그램 클론
+# 인스타그램 클론 with Vanilla JS
 
 ## 🐭 배포링크
-<h2><a href="https://nostalgic-hopper-e1df41.netlify.app">https://nostalgic-hopper-e1df41.netlify.app</a></h2>
+<h2><a href="instagram-vanillajs.netlify.app">instagram-vanillajs.netlify.app</a></h2>
 <h3>(아이디: hello, 비밀번호: 123 로 로그인 가능합니다😊)</h3>
 
 ## ⌛ 개발기간
 - 2022.01.03 ~ 2022.01.13 (약 10일)
 
 ## 🎀 구현화면
-로그인페이지와 메인페이지를 <b>반응형</b>으로 구현하였습니다.
+인스타그램의 로그인페이지와 메인페이지를 <br/>
+**Vanilla 자바스크립트**를 사용하여 <b>반응형</b>으로 구현하였습니다.
 
 ## 🌊 로그인페이지 (구현기능 5가지)
 1. setInterval로 휴대폰 이미지 무한 로테이션

@@ -1,7 +1,7 @@
 # 인스타그램 클론 with Vanilla JS
 
 ## 🐭 배포링크
-<h2><a href="instagram-vanillajs.netlify.app">instagram-vanillajs.netlify.app</a></h2>
+<h2><a href="https://instagram-vanillajs.netlify.app">https://instagram-vanillajs.netlify.app</a></h2>
 <h3>(아이디: hello, 비밀번호: 123 로 로그인 가능합니다😊)</h3>
 
 ## ⌛ 개발기간

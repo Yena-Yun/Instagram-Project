@@ -1,4 +1,4 @@
-# 인스타그램 클론 with Vanilla JS
+# 사진기반 소셜미디어 with Vanilla JS
 
 ## 🐭 배포링크
 <h2><a href="https://picture-based-social-media.netlify.app">https://picture-based-social-media.netlify.app</a></h2>
@@ -8,8 +8,8 @@
 - 2022.01.03 ~ 2022.01.13 (약 10일)
 
 ## 🎀 구현화면
-인스타그램의 로그인페이지와 메인페이지를 <br/>
-**Vanilla 자바스크립트**를 사용하여 <b>반응형</b>으로 구현하였습니다.
+소셜미디어 사이트의 로그인페이지와 메인페이지를  <br/>
+**바닐라 자바스크립트**를 사용하여 **강의코드 없이** 구현하였습니다.
 
 ## 🌊 로그인페이지 (구현기능 5가지)
 1. setInterval로 휴대폰 이미지 무한 로테이션

@@ -1,7 +1,7 @@
 # 사진기반 소셜미디어 with Vanilla JS
 
 ## 🐭 배포링크
-<h2><a href="https://picture-based-social-media.netlify.app">https://picture-based-social-media.netlify.app</a></h2>
+<h2><a href="https://hallidays-instagram.netlify.app/">https://hallidays-instagram.netlify.app/</a></h2>
 <h3>(아이디: hello, 비밀번호: 123 로 로그인 가능합니다😊)</h3>
 
 ## ⌛ 개발기간

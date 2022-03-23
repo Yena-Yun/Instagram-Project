@@ -32,34 +32,82 @@ slideContainer.addEventListener("scroll", () => {
 });
 
 // 친구 리스트에 유저 추가
+const friendsList = [
+  {
+    id: 0,
+    image: "./assets/image/friends/gaeko.jpg",
+    name: "개코",
+  },
+  {
+    id: 1,
+    image: "./assets/image/friends/ha-jeongwu.jpg",
+    name: "하정우",
+  },
+  {
+    id: 2,
+    image: "./assets/image/friends/boycold.jpg",
+    name: "BOYCOLD",
+  },
+  {
+    id: 3,
+    image: "./assets/image/friends/ariana.png",
+    name: "Ariana",
+  },
+  {
+    id: 4,
+    image: "./assets/image/friends/iu.png",
+    name: "아이유",
+  },
+  {
+    id: 5,
+    image: "./assets/image/friends/namjuhyeok.png",
+    name: "남주혁",
+  },
+  {
+    id: 6,
+    image: "./assets/image/friends/jin.jpg",
+    name: "진",
+  },
+  {
+    id: 7,
+    image: "./assets/image/friends/rm.png",
+    name: "알엠",
+  },
+  {
+    id: 7,
+    image: "./assets/image/friends/jimin.jpg",
+    name: "지민",
+  },
+  {
+    id: 8,
+    image: "./assets/image/friends/suzy.jpg",
+    name: "수지",
+  },
+];
+
 function renderFriends() {
   const friendList = document.querySelector(".friends-list");
-  const friend = document.createElement("li");
-  const friendInfo = document.createElement("div");
-  const friendImage = document.createElement("div");
-  const unicorn = document.createElement("img");
-  const friendName = document.createElement("div");
 
-  friend.classList.add("friend");
-  friendInfo.classList.add("friend-info");
-  friendImage.classList.add("friend-image");
-  unicorn.setAttribute("src", "assets/image/unicorn.png");
-  unicorn.setAttribute("alt", "friend-user-image");
-  friendName.classList.add("friend-name");
-  friendName.innerText = "unicorn";
+  for (let x of friendsList) {
+    const friendContainer = document.createElement("li");
+    friendContainer.classList.add("friend");
 
-  friendImage.appendChild(unicorn);
-  friendInfo.append(friendImage, friendName);
-  friend.appendChild(friendInfo);
+    const imgContainer = document.createElement("div");
+    imgContainer.classList.add("friend-image");
+    const img = document.createElement("img");
+    img.setAttribute("src", x.image);
+    img.setAttribute("alt", x.name);
+    imgContainer.appendChild(img);
 
-  console.log(friend);
-
-  friendList.appendChild(friend);
+    const info = document.createElement("div");
+    info.classList.add("friend-info");
+    info.innerText = x.name;
+    friendContainer.append(imgContainer, info);
+    friendList.appendChild(friendContainer);
+  }
 }
 
-for (let i = 0; i < 16; i++) {
-  renderFriends();
-}
+renderFriends();
 
 // 게시글 더보기 line-clamp
 const moreContent = document.querySelector(".more-content");

@@ -1,8 +1,8 @@
 # 사진기반 소셜미디어 with Vanilla JS
 
 ## 🐭 배포링크
+<h3>ID: hello, PW: 123 -> 로그인!</h3>
 <h2><a href="https://hallidays-non-fungible-token.netlify.app">https://hallidays-non-fungible-token.netlify.app</a></h2>
-<h3>(아이디: hello, 비밀번호: 123 로 로그인 가능합니다😊)</h3>
 
 ## ⌛ 개발기간
 - 2022.01.03 ~ 2022.01.13 (약 10일)
